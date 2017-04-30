@@ -89,6 +89,9 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
+	cstatus = -c color.status=always status --short
+	bc = branch --color -v
+	ll = log --graph --pretty=format:'%C(yellow)%h %C(blue)%ci%C(green) %an %C(red)%d %Creset%s'
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [mergetool]
